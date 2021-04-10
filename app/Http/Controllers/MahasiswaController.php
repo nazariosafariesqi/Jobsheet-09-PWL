@@ -60,8 +60,7 @@ class MahasiswaController extends Controller
  $kelas = Kelas::all();
  return view('mahasiswa.edit', compact('Mahasiswa','Kelas'));
  }
- public function update(Request $request, $Nim)
- {
+ public function update(Request $request, $Nim){
 //melakukan validasi data
  $request->validate([
  'Nim' => 'required',
